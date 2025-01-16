@@ -8,8 +8,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Index</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <!-- cabecalho -->
     
    <header>
     <h1>Meu site</h1>
@@ -22,6 +24,9 @@
       </ul>
     </nav>
    </header>
+
+   <!-- fim do cabecalho -->
+
    <main>
 
 
@@ -35,6 +40,7 @@
       <article>
         <h3>Nossa História</h3>
         <p>Fundado em 2024, nosso site tem como missão fornecer conteúdo de qualidade</p>
+       
       </article>
       <aside>
         <h4>Dica</h4>
@@ -45,10 +51,36 @@
     <section id="contact">
       <h2>Contato</h2>
       <p>Entre em contato conosco pelo formulário abaixo.</p>
+
+      <!-- Formulario -->
+
+      <form action="#" method="post">
+        <label for="nome">Nome</label><br />
+        <input type="text" id="nome" name="nome" required> <br><br>
+
+        <label for="email">Email</label><br />
+        <input type="email" id="email" name="email" required> <br><br>
+
+        <label for="mensagem">Mensagem</label><br />
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+        <button type="submit">Enviar</button>
+        
+      </form>
     </section>
 
 
    </main>
+
+   <footer>
+    <p>&copy; 2024 Meu Site Exemplo. Todos os direitos reservados.</p>
+    <nav>
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about"></a>Sobre</li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+   </footer>
         
 
         
